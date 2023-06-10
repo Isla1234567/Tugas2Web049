@@ -49,6 +49,28 @@ $config = [
             'rules' => [
             ],
         ],
+
+        'assetManager' => [
+            'bundles' => [
+                'yii\web\JqueryAsset' => [
+                    'sourcePath' => null,
+                    'basePath' => '@webroot',
+                    'baseUrl' => '@web',
+                    'js' => [
+                        'js/main.js',
+                    ],
+                ],
+                'yii\bootstrap5\BootstrapAsset' =>
+                [
+                    'sourcePath' => null ,
+                    'basePath' => '@webroot',
+                    'baseUrl' => '@web',
+                    'css' => [
+                        'css/style.css',
+                    ],
+                ],
+            ],
+        ],
         
     ],
     'params' => $params,
